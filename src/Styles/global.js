@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import starBackground from '../Images/starBackground.png';
 import deathStarBackground from '../Images/deathStarBackground.jpg';
-import lightDeathStarBackground from '../Images/lightDeathStarBackground.png';
 
 export default createGlobalStyle`
    * {
@@ -14,9 +12,7 @@ export default createGlobalStyle`
       min-height: 100%;
    }
    body {
-    /* background-image: url(${starBackground}); */
     background-image: url(${deathStarBackground});
-    /* background-image: url(${lightDeathStarBackground}); */
     -webkit-font-smoothing: antialiased !important;
    }
    body, input, button {

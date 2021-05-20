@@ -12,9 +12,9 @@ export const CardBox = styled.div`
   width: 95%;
   box-shadow: 2px 2px 6px #f4d03f;
   &:hover{
-    transform: translate(-2px, -2px);
+    transform: translate(-1px, -1px);
     box-shadow: 4px 4px 6px #f4d03f;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 `
   
@@ -27,19 +27,23 @@ export const BoxInfo = styled.div`
 `
   
 export const likeBtn = styled.button`
-  border: solid 1px yellow;
+  border: solid 2px #5567c2;
   position: relative;
   text-align: center;
   font-size: 13px;
   font-weight: bold;
   color: white;
-  background: #f9882a;
-  border-radius: 10px ;
-  box-shadow: 2px 2px 4px #f4d03f;
-  width: 70px;
-  height: 20px;
+  background-color: #5567c2;
+  border-radius: 8px ;
+  box-shadow: 2px 2px 10px #5567c2;
+  width: 58px;
+  height: 22px;
   &:hover{
-  background-color: red;
+    border: solid 2px #e85d48;
+    transform: translate(1.5px, 1.5px);
+    background-color: #e85d48;
+    box-shadow: 3px 3px 10px #e85d48;
+    transition: all 0.1s;
   }
 `
 
