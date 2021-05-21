@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getData } from '../../Services/api';
 import CardCharacter from '../../Components/CardCharacter';
 import * as Styled from './Character.styles';
+import darkLightSide from '../../Images/darkLightSide.jpeg'
 
 function Character() {
   const [character, setCharacter] = useState([]);
@@ -16,7 +17,10 @@ function Character() {
 
   return (
     <div>
-      <h1>Personagens</h1>
+      <Styled.TitleBar>
+        <h1>Personagens</h1>
+        <img src={darkLightSide} alt="Dark and Light Side" />
+      </Styled.TitleBar>
       <Styled.CharacterList>
         {character.map((character) => <CardCharacter character={character} key={character.name} />)}
       </Styled.CharacterList>

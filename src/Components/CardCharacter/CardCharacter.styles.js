@@ -5,7 +5,7 @@ export const CardBox = styled.div`
   background-image: url(${starBackground});
   color: white;
   position: relative;
-  margin: 5px;
+  margin: auto;
   border: solid 2px yellow;
   border-radius: 20px;
   padding: 2px;
